@@ -1,5 +1,5 @@
 $(document).ready(function() {
-   
+
     function pizza(size, toppings, crust, total, orderNumber) {
         this.size = size;
         this.toppings = toppings;
@@ -7,7 +7,7 @@ $(document).ready(function() {
         this.total = total;
         this.orderNumber = orderNumber;
       }
-  
+
   $('.order').click(function() {
     var sizeOfPizza = $(".size option:selected").val();
     var toppingsOfPizza = $(".toppings option:selected").val();
@@ -25,14 +25,14 @@ $(document).ready(function() {
 
 
 
-    $('.add-btn').click(function() {
+    $('.add-pizza').click(function() {
       var sizeOfPizza = $(".size option:selected").val();
       var toppingsOfPizza = $(".toppings option:selected").val();
       var crustOfPizza = $(".crust option:selected").val();
       var total = parseInt(sizeOfPizza) + parseInt(toppingsOfPizza) + parseInt(crustOfPizza);
-      order = order + 1;
-    
+      orderNumber = orderNumber + 2;
       amountt = amountt + total;
+
 
 
       var newPizza = new pizza(sizeOfPizza, toppingsOfPizza, crustOfPizza, total, order);
@@ -41,12 +41,13 @@ $(document).ready(function() {
 
       $("#pizza").append(newRow);
     });
-    $(".checkout-btn").click(function() {
+    $("#checkout").click(function() {
         amountt = amountt + total;
-        $(".amountt h3 span").html(amountt)
-       var answer= prompt("get order delivered and have it hot at ksh @150 enter yes or no")
+        $(".amountt h4 span").html(amountt)
+       var answer= prompt("get order delivered to you at ksh 100 enter yes or no")
         if (answer =="yes") {var location=prompt("enter your location")
-        alert("your order will get to you in a few minutes at " + location + "your total amount is " +(amountt + 150))}
+        alert("you will recieve your order in no due time " + location + "your total amount is " +(amountt + 100))}
+    
    });
     
   });
@@ -54,13 +55,3 @@ $(document).ready(function() {
 
   
 });
-
-
-
-
-
-  
-
-
-
-

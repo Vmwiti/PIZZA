@@ -1,6 +1,10 @@
 body{
-    background-color: burlywood;
-    background-image:url("../images/por.webp") ;
+    background-color: royalblue;
+    background-image:url("../images/5.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70;
+    height: 50%;
 }
 h1, h2,h3,p{
     text-align: center;
