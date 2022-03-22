@@ -1,0 +1,25 @@
+body{
+    background-color: burlywood;
+    background-image:url("../images/por.webp") ;
+}
+h1, h2,h3,p{
+    text-align: center;
+    font-style: oblique;
+    color: blue;
+}
+img{
+    width: 20%;
+    height: 10%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+h4{
+    color: brown;
+} 
+   
+.YOUR ORDER{
+    text-align: center;
+}
